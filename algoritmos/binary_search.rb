@@ -16,5 +16,4 @@ end
 
 array = [1,3,4,5,6,7,6,4,3,5,6,1,3,4,5,]
 n = array.length
-
 puts binary_search(array, 0, n-1, 1)
