@@ -8,13 +8,10 @@
 #         end
 #     end 
 # end
-
-def linear_search(array, var)
-    for i in 0..array.length - 1
-        return i if array[i] == var
-    end 
+module LinearSearch
+    def self.search(array, var)
+        for i in 0..array.length - 1
+            return i if array[i] == var
+        end
+    end
 end
-
-array = [1,3,4,5,6,7]
-
-puts linear_search(array, 4)

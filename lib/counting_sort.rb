@@ -1,4 +1,5 @@
-def counting_sort(array)
+module CountingSort
+    def self.sort(array)
     n = array.length
     output = Array.new(n)
     count = Array.new(array.max+1, 0) 
@@ -15,6 +16,4 @@ def counting_sort(array)
     end
     output
 end
-
-array = [7,9,10,5,1,10,11,4,8,9,15,23,25,28,29,31,65,101,104]
-p counting_sort(array)
+end
