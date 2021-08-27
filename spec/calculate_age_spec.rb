@@ -10,6 +10,7 @@ describe CalculateAge do
     birth_month = 2
     birth_year = 1990
 
-    expect(CalculateAge.calculate(current_day, current_month, current_year, birth_day, birth_month, birth_year)).to eq 31
+    expect(CalculateAge.calculate(current_day, current_month,
+                                  current_year, birth_day, birth_month, birth_year)).to eq "Years: 31 Months: 6 Days: 13"
   end
 end
