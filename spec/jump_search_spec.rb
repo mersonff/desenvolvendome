@@ -6,6 +6,6 @@ describe JumpSearch do
               34, 55, 89, 144, 233, 377, 610]
     x = 55
 
-    expect(JumpSearch.seach(array, x)).eq 11
+    expect(JumpSearch.search(array, x)).to eq 10
   end
 end
