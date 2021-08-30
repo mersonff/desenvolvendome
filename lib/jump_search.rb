@@ -1,6 +1,6 @@
 module JumpSearch
   def self.search(array, x)
-    n = array.length
+    n = array.size - 1
 
     step = Math.sqrt(n).floor
 
@@ -17,9 +17,12 @@ module JumpSearch
     while array[prev] < x
       prev += 1
 
-      if array[prev] == x
-        return prev
+      if prev == [step, n].min
+        return -1
       end
+    end
+    if array[prev] == x
+      return prev.to_i
     end
 
     return -1
