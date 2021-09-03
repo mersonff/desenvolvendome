@@ -1,9 +1,8 @@
-require 'commom_characters'
+require 'common_characters'
 
-describe CommomCharacters do
+describe CommonCharacters do
   it 'should find the commom characters' do
-    strings = [ "geeksforgeeks", "gemkstones",
-                "acknowledges", "aguelikes" ]
+    strings = %w[geeksforgeeks gemkstones acknowledges aguelikes]
 
     n = strings.length
     expect(CommonCharacters.find(strings, n)).to eq "e g k s"
